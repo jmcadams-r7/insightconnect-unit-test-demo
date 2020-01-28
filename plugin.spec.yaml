@@ -1,0 +1,53 @@
+plugin_spec_version: v2
+extension: plugin
+products: [insightconnect]
+name: unit_test_demo
+title: Unit Test Demo
+description: Show people how to unit test stuff
+version: 1.0.0
+vendor: rapid7
+support: community
+status: [obsolete]
+resources:
+  source_url: http://www.rapid7.com
+  license_url: https://github.com/rapid7/insightconnect-plugins/blob/master/LICENSE
+
+tags:
+- uselss
+hub_tags:
+  use_cases: [dontusethis]
+  keywords: [test, app]
+  features: []
+
+triggers:
+  random_number:
+    title: Random Number
+    description: Returns a random number
+    output:
+      answer:
+        title: Answer
+        description: Answer
+        type: int
+        required: true
+
+actions:
+  add_numbers:
+    title: Add Numbers
+    description: Add Numbers
+    input:
+      number1:
+        title: Number1
+        type: int
+        description: A Number
+        required: true
+      number2:
+        title: Number2
+        type: int
+        description: A Number
+        required: true
+    output:
+      answer:
+        title: Answer
+        description: Answer
+        type: int
+        required: true
